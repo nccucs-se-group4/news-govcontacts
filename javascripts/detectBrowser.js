@@ -1,22 +1,13 @@
 <script type="text/javascript">
-    var isIE = navigator.userAgent.search("MSIE") > -1;
-    var isIE7 = navigator.userAgent.search("MSIE 7") > -1;
-    var isFirefox = navigator.userAgent.search("Firefox") > -1;
-    var isOpera = navigator.userAgent.search("Opera") > -1;
-    var isSafari = navigator.userAgent.search("Safari") > -1;//Google瀏覽器是用這核心
-    if (isIE7) {
-        alert('isIE7');
-    }
-    if (isIE) {
-        alert('isIE');
-    }
-    if (isFirefox) {
-        alert('isFirefox');
-    }
-    if (isOpera) {
-        alert('isOpera');
-    }
-    if (isSafari) {
-        alert('isSafari or Chrome');
+    if (bowser.msie && bowser.version <= 6) {
+        alert('Hello China');
+    } else if (bowser.firefox){
+        alert('Hello Foxy');
+    } else if (bowser.chrome){
+        alert('Hello Silicon Valley');
+    } else if (bowser.safari){
+        alert('Hello Apple Fan');
+    } else if(bowser.iphone || bowser.android){
+        alert('Hello mobile');
     }
 </script>
