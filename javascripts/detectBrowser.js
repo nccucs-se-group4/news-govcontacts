@@ -57,7 +57,7 @@ if (isNaN(majorVersion)) {
   majorVersion = parseInt(navigator.appVersion, 10);
 }
 if (browserName == "Chrome")
- document.write("<a href=\"Chrome\">" + chromeDownloader + "</a>")
+ document.write("<a href=" + chromeDownloader + "> Chrome </a>")
 document.write("<ul>")
 document.write("<li>Browser name = " + browserName + "</li>");
 document.write("<li>Full version = " + fullVersion + "</li>");
