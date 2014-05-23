@@ -5,7 +5,10 @@ var browserName = navigator.appName;
 var fullVersion = ''+parseFloat(navigator.appVersion);
 var majorVersion = parseInt(navigator.appVersion,10);
 var nameShift,versionShift,trimSemicolon;
- 
+var chromeDownloader = "https://github.com/nccucs-se-group4/news-LyContacts-extension";
+var firfoxDownloader = "https://github.com/nccucs-se-group4/firefox-extension";
+var safariDownloader = "https://github.com/nccucs-se-group4/firefox-extension";
+
 if ((versionShift = navigatorAgent.indexOf("Opera")) != -1) {
   browserName = "Opera";
   fullVersion = navigatorAgent.substring(versionShift + 6);
@@ -53,6 +56,8 @@ if (isNaN(majorVersion)) {
   fullVersion = '' + parseFloat(navigator.appVersion);
   majorVersion = parseInt(navigator.appVersion, 10);
 }
+if (browserName == "Chrome")
+ document.write("<a href=\"Chrome\">" + chromeDownloader + "</a>")
 document.write("<ul>")
 document.write("<li>Browser name = " + browserName + "</li>");
 document.write("<li>Full version = " + fullVersion + "</li>");
