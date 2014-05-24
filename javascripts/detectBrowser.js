@@ -9,31 +9,31 @@ var chromeDownloader = "https://github.com/nccucs-se-group4/news-LyContacts-exte
 var firfoxDownloader = "https://github.com/nccucs-se-group4/firefox-extension";
 var safariDownloader = "https://github.com/nccucs-se-group4/firefox-extension";
 
-if ((versionShift = navigatorAgent.indexOf("Opera")) != -1) {
+if ((versionShift = navigatorAgent.indexOf("Opera")) > -1) {
   browserName = "Opera";
   fullVersion = navigatorAgent.substring(versionShift + 6);
   if ((versionShift = navigatorAgent.indexOf("Version")) != -1)
   fullVersion = navigatorAgent.substring(versionShift + 8);
 }
-else if ((versionShift = navigatorAgent.indexOf("MSIE")) != -1) {
+else if ((versionShift = navigatorAgent.indexOf("MSIE")) > -1) {
   browserName = "Microsoft Internet Explorer";
   fullVersion = navigatorAgent.substring(versionShift + 5);
 }
-else if ((versionShift = navigatorAgent.indexOf("Sleipnir")) != -1) {
+else if ((versionShift = navigatorAgent.indexOf("Sleipnir")) > -1) {
   browserName = "Sleipnir";
   fullVersion = navigatorAgent.substring(versionShift + 9);
 }
-else if ((versionShift = navigatorAgent.indexOf("Chrome")) != -1) {
+else if ((versionShift = navigatorAgent.indexOf("Chrome")) > -1) {
   browserName = "Chrome";
   fullVersion = navigatorAgent.substring(versionShift + 7);
 }
-else if ((versionShift = navigatorAgent.indexOf("Safari")) != -1) {
+else if ((versionShift = navigatorAgent.indexOf("Safari")) > -1) {
   browserName = "Safari";
   fullVersion = navigatorAgent.substring(versionShift + 7);
   if ((versionShift = navigatorAgent.indexOf("Version")) != -1)
   fullVersion = navigatorAgent.substring(versionShift + 8);
 }
-else if ((versionShift = navigatorAgent.indexOf("Firefox")) != -1) {
+else if ((versionShift = navigatorAgent.indexOf("Firefox")) > -1) {
   browserName = "Firefox";
   fullVersion = navigatorAgent.substring(versionShift + 8);
 }
