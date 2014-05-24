@@ -57,12 +57,12 @@ if (isNaN(majorVersion)) {
   majorVersion = parseInt(navigator.appVersion, 10);
 }
 if (browserName == "Chrome")
- document.write("<a href=" + chromeDownloader + "> Chrome </a>");
+ document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 else if (browserName == "Firefox")
- document.write("<a href=" + firefoxDownloader + "> Firefox </a>");
+ document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 else if (browserName == "Safari")
- document.write("<a href=" + safariDownloader + "> Safari </a>");
+ document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
 else {
-  document.write("Sorry!"+ browserName + "haven't been supported yet!");
+  document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 }
 }
