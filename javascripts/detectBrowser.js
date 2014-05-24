@@ -65,5 +65,4 @@ else if (browserName == "Safari")
 else {
   document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 }
-document.write(browserName);
 }
