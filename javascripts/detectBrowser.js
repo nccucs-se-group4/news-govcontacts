@@ -57,13 +57,12 @@ if (isNaN(majorVersion)) {
   majorVersion = parseInt(navigator.appVersion, 10);
 }
 if (browserName == "Chrome")
- document.write("<a href=" + chromeDownloader + "> Chrome </a>")
-document.write("<ul>")
-document.write("<li>Browser name = " + browserName + "</li>");
-document.write("<li>Full version = " + fullVersion + "</li>");
-document.write("<li>Major version = " + majorVersion + "</li>");
-document.write("<li>navigator.appName = " + navigator.appName + "</li>");
-document.write("</ul>")
-document.write("<h3>navigator.userAgent</h3>")
-document.write("<p>" + navigator.userAgent + "</p>");
+ document.write("<a href=" + chromeDownloader + "> Chrome </a>");
+else if (browserName == "Firefox")
+ document.write("<a href=" + firefoxDownloader + "> Firefox </a>");
+else if (browserName == "Safari")
+ document.write("<a href=" + safariDownloader + "> Safari </a>");
+else {
+  document.write("Sorry!"+ browserName + "haven't been supported yet!");
+}
 }
