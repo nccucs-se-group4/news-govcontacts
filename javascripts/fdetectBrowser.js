@@ -1,4 +1,4 @@
-function detectBrowser() {
+function fdetectBrowser() {
 var nVer = navigator.appVersion;
 var navigatorAgent = navigator.userAgent;
 var browserName = navigator.appName;
@@ -57,14 +57,14 @@ if (isNaN(majorVersion)) {
   majorVersion = parseInt(navigator.appVersion, 10);
 }
 if (browserName == "Chrome")
- document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
+ document.write('<img src="images/title2.png" width ="800 height = "700" >');
 else if (browserName == "Firefox")
- document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
+  document.write('<img src="images/title2.png" width ="800 height = "700" >');
 else if (browserName == "Safari")
- document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
+  document.write('<img src="images/title2.png" width ="800 height = "700" >');
 
 else {
-  document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
+   document.write('<img src="images/title2.png" width ="800 height = "700" >');
 }
 }
 
