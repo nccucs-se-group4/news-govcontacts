@@ -16,3 +16,4 @@ function detectBrowser(){
 		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 	if (isSafari)
 		document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
+}
