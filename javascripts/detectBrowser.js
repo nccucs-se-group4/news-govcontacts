@@ -57,10 +57,12 @@ if (isNaN(majorVersion)) {
   fullVersion = '' + parseFloat(navigator.appVersion);
   majorVersion = parseInt(navigator.appVersion, 10);
 }
-if (browserName == "Chrome")
+if (browserName == "Chrome") {
+  text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>";
   document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
+}
 else if (browserName == "Firefox") {
-  text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
+  text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>";
   document.body.appendChild(document.createTextNode("Text"));
 }
 else if (browserName == "Safari")
