@@ -4,8 +4,7 @@ function detectBrowser(){
 	var safariDownloader = "https://www.dropbox.com/s/pvhgrkqhbent6th/VisitedLinksLogger.safariextz?dl=1";
 	if (navigator.userAgent.indexOf("Firefox")!=-1)
 		document.open()
-		ocument.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
-		document.body.appendChild(text);
+		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 		document.close()
 	if (navigator.userAgent.indexOf("Chrome")!=-1)
 		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
