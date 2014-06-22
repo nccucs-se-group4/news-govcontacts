@@ -63,8 +63,6 @@ else if (browserName == "Firefox")
 else if (browserName == "Safari")
  document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
 
-else {
-  document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
-}
+
 }
 
