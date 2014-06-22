@@ -65,7 +65,7 @@ if (browserName == "Chrome") {
 else if (browserName == "Firefox") {
   alert("Firefox")
   text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
-  document.getElementById("download").innerHTML(text);
+  document.write(text);
 }
 else if (browserName == "Safari") {
   alert()
