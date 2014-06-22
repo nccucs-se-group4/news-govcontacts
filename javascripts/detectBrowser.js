@@ -59,7 +59,8 @@ if (isNaN(majorVersion)) {
 }
 if (browserName == "Chrome") {
   alert("Chrome")
-  document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
+  text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
+  document.getElementById("download").appendChild(text);
 }
 else if (browserName == "Firefox") {
   alert("Firefox")
