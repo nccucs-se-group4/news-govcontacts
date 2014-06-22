@@ -6,7 +6,7 @@ var fullVersion = ''+parseFloat(navigator.appVersion);
 var majorVersion = parseInt(navigator.appVersion,10);
 var nameShift,versionShift,trimSemicolon;
 var chromeDownloader = "https://github.com/nccucs-se-group4/news-LyContacts-extension";
-var firfoxDownloader = "https://www.dropbox.com/s/mbvi0icx8ejlkf4/firefox-extension.xpi?dl=1";
+var firefoxDownloader = "https://www.dropbox.com/s/mbvi0icx8ejlkf4/firefox-extension.xpi?dl=1";
 var safariDownloader = "https://www.dropbox.com/s/pvhgrkqhbent6th/VisitedLinksLogger.safariextz?dl=1";
 
 if ((versionShift = navigatorAgent.indexOf("Opera")) > -1) {
