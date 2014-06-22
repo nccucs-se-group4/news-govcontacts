@@ -3,9 +3,9 @@ function detectBrowser(){
 	var firfoxDownloader = "https://www.dropbox.com/s/mbvi0icx8ejlkf4/firefox-extension.xpi?dl=1";
 	var safariDownloader = "https://www.dropbox.com/s/pvhgrkqhbent6th/VisitedLinksLogger.safariextz?dl=1";
 	if (navigator.userAgent.indexOf("Firefox")!=-1)
+		document.open()
 		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
-	if (navigator.userAgent.indexOf("MSIE")!=-1)
-		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
+		document.close()
 	else if (navigator.userAgent.indexOf("Chrome")!=-1)
 		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 	else if (navigator.userAgent.indexOf("Safari")!=-1)
