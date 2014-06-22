@@ -1,4 +1,7 @@
 function detectBrowser(){
+	var chromeDownloader = "https://github.com/nccucs-se-group4/news-LyContacts-extension";
+	var firfoxDownloader = "https://www.dropbox.com/s/mbvi0icx8ejlkf4/firefox-extension.xpi?dl=1";
+	var safariDownloader = "https://www.dropbox.com/s/pvhgrkqhbent6th/VisitedLinksLogger.safariextz?dl=1";
 	var sAgent = navigator.userAgent.toLowerCase();
 	this.isIE = (sAgent.indexOf("msie")!=-1); //IE6.0-7
 	this.isFF = (sAgent.indexOf("firefox")!=-1);//firefox
@@ -7,9 +10,11 @@ function detectBrowser(){
 	this.isNN = (sAgent.indexOf("netscape")!=-1);//netscape
 	this.isCh = (sAgent.indexOf("chrome")!=-1);//chrome
 	if (this.isFF)
-  document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
-  else if (this.isCh)
-  document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
-  else if (this.isSa)
-  document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
+  		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
+  	else if (this.isCh)
+  		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
+  	else if (this.isSa)
+  		document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
+  	else
+  		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 }
