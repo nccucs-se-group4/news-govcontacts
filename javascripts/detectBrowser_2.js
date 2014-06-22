@@ -6,8 +6,10 @@ function detectBrowser(){
 		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 	if (navigator.userAgent.indexOf("MSIE")!=-1)
 		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
-	if (navigator.userAgent.indexOf("Chrome")!=-1)
+	else if (navigator.userAgent.indexOf("Chrome")!=-1)
 		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
-	if (navigator.userAgent.indexOf("Safari")!=-1)
+	else if (navigator.userAgent.indexOf("Safari")!=-1)
 		document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
+	else
+		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 }
