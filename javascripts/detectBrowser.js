@@ -60,7 +60,9 @@ if (isNaN(majorVersion)) {
 if (browserName == "Chrome")
   document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 else if (browserName == "Firefox") {
-  document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
+  text += "<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>";
+  var tab = window.open('', '_blank');
+  tab.document.body.innerHTML = text;
 }
 else if (browserName == "Safari")
   document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
