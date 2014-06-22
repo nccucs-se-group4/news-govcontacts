@@ -61,8 +61,7 @@ if (browserName == "Chrome")
   document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 else if (browserName == "Firefox") {
   text += "<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>";
-  var tab = window.open('', '_blank');
-  tab.document.body.innerHTML = text;
+  document.body.innerHTML = text;
 }
 else if (browserName == "Safari")
   document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
