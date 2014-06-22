@@ -10,6 +10,4 @@ function detectBrowser(){
 		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 	else if (navigator.userAgent.indexOf("Safari")!=-1)
 		document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
-	else
-		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 }
