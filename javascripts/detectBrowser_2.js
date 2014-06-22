@@ -9,7 +9,8 @@ function detectBrowser(){
 	this.isOp = (sAgent.indexOf("opera")!=-1);//opera
 	this.isNN = (sAgent.indexOf("netscape")!=-1);//netscape
 	this.isCh = (sAgent.indexOf("chrome")!=-1);//chrome
-	if (this.isFF)
+	var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+	if (is.firefox)
   		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
   	else if (this.isCh)
   		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
