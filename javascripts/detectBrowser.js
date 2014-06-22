@@ -63,7 +63,7 @@ if (browserName == "Chrome") {
 }
 else if (browserName == "Firefox") {
   alert("Firefox")
-  document.getElementById("download").innerHTML = "Firefox";
+  document.getElementById("download").innerHTML = ("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 }
 else if (browserName == "Safari") {
   alert()
