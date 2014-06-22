@@ -49,9 +49,10 @@ else if ((nameShift = navigatorAgent.lastIndexOf(' ') + 1) <
 // 如果分號存在修剪分號
 if ((trimSemicolon = fullVersion.indexOf(";")) != -1)
   fullVersion = fullVersion.substring(0, trimSemicolon);
-if ((trimSemicolon = fullVersion.indexOf(" ")) != -1)
+if ((trimSemicolon = fullVersion.indexOf(" ")) != -1) {
   fullVersion = fullVersion.substring(0, trimSemicolon);
   majorVersion = parseInt('' + fullVersion, 10);
+}
 if (isNaN(majorVersion)) {
   fullVersion = '' + parseFloat(navigator.appVersion);
   majorVersion = parseInt(navigator.appVersion, 10);
@@ -60,7 +61,6 @@ if (browserName == "Chrome")
   document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 else if (browserName == "Firefox") {
   document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
-}
 }
 else if (browserName == "Safari")
   document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
