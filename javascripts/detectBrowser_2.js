@@ -11,7 +11,7 @@ function detectBrowser(){
 	var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
 	if (isChrome)
  		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
-	else if (isFirefox)
+	else if (navigator.userAgent.match("Firefox"))
  		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
 	else if (isSafari)
  		document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
