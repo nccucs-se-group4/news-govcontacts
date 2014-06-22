@@ -9,13 +9,13 @@ function detectBrowser(){
     	// At least Safari 3+: "[object HTMLElementConstructor]"
 	var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
 	var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+
+	var output = "<a href=";
 	if (isChrome)
- 		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
-	else if (navigator.userAgent.match("Firefox"))
- 		document.write("<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>");
-	else if (isSafari)
- 		document.write("<a href=" + safariDownloader + " class=\"xbutton\"> Safari </a>");
-	else {
-  		document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
-	}
+		output += chromeDownloader + " class=\"xbutton\"> Chrome </a>";
+	if (isForefox)
+		output += firefoxDownloader + " class=\"xbutton\"> Firefox </a>";
+	if (isSafari)
+		output += safariDownloader + " class=\"xbutton\"> Safari </a>";
+	document.body.innerHTML = output;
 }
