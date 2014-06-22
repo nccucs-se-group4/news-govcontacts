@@ -60,12 +60,12 @@ if (isNaN(majorVersion)) {
 if (browserName == "Chrome") {
   alert("Chrome")
   text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
-  document.getElementById("download").appendChild(text);
+  document.getElementById("download").innerHTML(text);
 }
 else if (browserName == "Firefox") {
   alert("Firefox")
   text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
-  document.getElementById("download").appendChild(text);
+  document.getElementById("download").innerHTML(text);
 }
 else if (browserName == "Safari") {
   alert()
