@@ -60,7 +60,7 @@ if (isNaN(majorVersion)) {
 if (browserName == "Chrome") {
   alert("Chrome")
   text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
-  document.getElementById("download").innerHTML(text);
+  document.write(text);
 }
 else if (browserName == "Firefox") {
   alert("Firefox")
