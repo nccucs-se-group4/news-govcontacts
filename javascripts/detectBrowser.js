@@ -58,7 +58,7 @@ if (isNaN(majorVersion)) {
   majorVersion = parseInt(navigator.appVersion, 10);
 }
 if (browserName == "Chrome") {
-  alert()
+  alert("Chrome")
   document.write("<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>");
 }
 else if (browserName == "Firefox") {
