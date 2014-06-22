@@ -64,7 +64,7 @@ if (browserName == "Chrome") {
 }
 else if (browserName == "Firefox") {
   alert("Firefox")
-  text = "<a href=" + chromeDownloader + " class=\"xbutton\"> Chrome </a>"
+  text = "<a href=" + firefoxDownloader + " class=\"xbutton\"> Firefox </a>"
   document.write(text);
 }
 else if (browserName == "Safari") {
