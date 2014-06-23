@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+a.button {
+border: none 0px #000000;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #369;
+transition: background-color 0.5s;
+	    -webkit-transition: background-color 0.5s; /* Chrome & safari */
+	    -moz-transition: background-color 0.5s; /* firefox */
+padding: 20px 60px;
+	 vertical-align: middle;
+	 font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	 font-size: 11px;
+color: #fff;
+       text-decoration: none;
+}
+a.button:hover {
+	background-color: #339966;
+}
+
+div.game {
+	background-color: black;
+}
+div.part {
+	background-color: #000;
+transition: background-color 1s, color 1s;
+	    -webkit-transition: background-color 1s, color 1s; /* Chrome & safari */
+	    -moz-transition: background-color 1s, color 1s; /* firefox */
+padding: 20px 60px;
+	 vertical-align: middle;
+	 font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	 font-size: 13px;
+color: #333;
+       text-decoration: none;
+}
+
+div.part:hover {
+	background-color: #111;
+color: #fff;
+}
+hi {
+	font-size:30px
+		font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+}
+
+a.circle{
+padding: 20px 20px;
+border: none 0px #000000;
+	background-color: #369;
+transition: background-color 0.5s;
+	    -webkit-transition: background-color 0.5s; /* Chrome & safari */
+	    -moz-transition: background-color 0.5s; /* firefox */
+	    vertical-align: middle;
+	    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	    font-size: 11px;
+color: #fff;
+       text-decoration: none;
+width: 100px;
+height: 100px;
+	border-radius: 100px;	/* °ª«× */
+}
+a.circle:hover{
+	background-color: #339966;
+}
+
+
+
+#css_table {
+display:table;
+}
+.css_tr {
+padding: 20px 60px;
+display: table-row;
+}
+.css_td {
+display: table-cell;
+}
+#botpos{
+margin-left:auto;
+}
+#titlefont{
+border: none 0px #000000;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #8B4513;
+        margin-left : 5%;
+transition: background-color 0.5s;
+	    -webkit-transition: background-color 0.5s; /* Chrome & safari */
+	    -moz-transition: background-color 0.5s; /* firefox */
+padding: 20px 60px;
+	 vertical-align: middle;
+	 font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	 font-size: 11px;
+color: #fff;
+       text-decoration: none;
+}
+#titlefont:hover{
+background-color: #C0C0C0;
+}
+#fb-comments{
+display: block;
+  width: 500px;
+  margin: 0 auto;
+z-index:5;
+}
